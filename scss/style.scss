@@ -49,7 +49,7 @@ a:link, a:visited ,a:hover ,a:active { color: $point-color;}
 }
 
 img, input[type="image"], video, embed, iframe, marquee, object, table {
-  aspect-ratio: attr(width) / attr(height);
+  aspect-ratio: attr(width) / attr(height); height: auto;
 }
 
 $shadow: ();
@@ -167,7 +167,8 @@ $shadow: ();
 .about-td{ width: 1000px; margin: 40px auto; display: flex; justify-content: center; flex-wrap: wrap;
   @include pad-width { width: 90%;}
 }
-.about-photo{ background: $main-color; width: 200px; height: 200px; position: relative; border-radius: 50%;
+.about-photo{ width: 200px; height: 200px; position: relative;
+  img{ width: 100%; border-radius: 50%; position: absolute; z-index: 9;}
   @include phone-width { width: 150px; height: 150px;}
 }
 .photo-decor{ width: 200px; height: 200px; border: $main-color 4px dotted; position: absolute; top: -15px; left: -25px; border-radius: 50%;
