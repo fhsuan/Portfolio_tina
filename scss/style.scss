@@ -376,3 +376,13 @@ to { transform: rotate(360deg);}
 	0% { opacity: 0;}
 	100% { opacity: 1;}		
 }
+
+.load{
+	animation: load 4.5s forwards;
+  visibility: visible !important;	
+}
+@keyframes load {
+	0% { opacity: 1;}
+  80% { opacity: 1; transform: translateY(0%);}
+	100% { opacity: 0; transform: translateY(-100%);}		
+}
